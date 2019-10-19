@@ -80,29 +80,6 @@ $(document).ready(function() {
 
 function var_init()
 {
-  //grab the butt_ons
-  var butt_1 = $("#button-1");
-  var butt_2 = $("#button-2");
-  var butt_3 = $("#button-3");
-  var butt_4 = $("#button-4");
-  var butt_5 = $("#button-5");
-  var butt_6 = $("#button-6");
-  var butt_7 = $("#button-7");
-  var butt_8 = $("#button-8");
-  var butt_9 = $("#button-9");
-  var butt_0 = $("#button-0");
-
-  //grab the operators
-  var butt_plus = $("#button-plus");
-  var butt_minus = $("#button-minus");
-  var butt_multi = $("#button-multiply");
-  var butt_div = $("#button-divide");
-  var butt_pow = $("#button-power");
-  
-  //grab the special operators
-  var butt_eq = $("#button-equal");
-  var butt_clear = $("#button-clear");
-
   //placeholder arrays for the number inputs
   var first_number = [];
   var second_number = [];
@@ -123,14 +100,40 @@ function var_init()
   //s'theresult
   var result = 0;
 }
+var_init();
+
+$(".number").click(function ()
+{
+  // var number = $(this).val();
+  // console.log("number " + number);
+});
+
+$(".operator").click(function ()
+{
+  // var operator = $(this).val();
+  // console.log("operator " + operator);
+});
+
+$(".equal").click(function ()
+{
+  // var equal = $(this).val();
+  // console.log("equal " + equal);
+});
+
+$(".clear").click(function ()
+{
+  // var clear = $(this).val();
+  // console.log("clear " + clear);
+});
 
 //takes inputs and returns them into the arrays
-function process_inputs()
+function process_inputs(input)
 {
+  input.val();
   //if the first operator is selected
   if(selected_operator = 1)
   {
-    
+    console.log(input);
   }
   else if(selected_operator = 2)
   {
